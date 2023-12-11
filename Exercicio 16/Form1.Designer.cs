@@ -119,6 +119,7 @@
             checkBox1.TabIndex = 16;
             checkBox1.Text = "Mostrar";
             checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // label4
             // 
@@ -129,6 +130,7 @@
             label4.Size = new Size(98, 28);
             label4.TabIndex = 17;
             label4.Text = "Utilizador";
+            label4.Click += label4_Click;
             // 
             // button3
             // 

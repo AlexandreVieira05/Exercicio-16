@@ -37,6 +37,7 @@
             button2 = new Button();
             label4 = new Label();
             button3 = new Button();
+            checkBox1 = new CheckBox();
             SuspendLayout();
             // 
             // textBox3
@@ -45,6 +46,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(273, 27);
             textBox3.TabIndex = 11;
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // textBox2
             // 
@@ -106,6 +108,7 @@
             label4.Size = new Size(98, 28);
             label4.TabIndex = 18;
             label4.Text = "Utilizador";
+            label4.Click += label4_Click;
             // 
             // button3
             // 
@@ -115,12 +118,25 @@
             button3.TabIndex = 19;
             button3.Text = "Fechar Programa";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(464, 201);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(82, 24);
+            checkBox1.TabIndex = 20;
+            checkBox1.Text = "Mostrar";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(checkBox1);
             Controls.Add(button3);
             Controls.Add(label4);
             Controls.Add(button2);
@@ -148,5 +164,6 @@
         private Button button2;
         private Label label4;
         private Button button3;
+        private CheckBox checkBox1;
     }
 }

@@ -5,6 +5,7 @@ namespace Exercicio_16
         public Form1()
         {
             InitializeComponent();
+            Utilizador.Nome = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -15,20 +16,17 @@ namespace Exercicio_16
             textBox1.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";
+            label4.Text = Utilizador.Nome;
             MessageBox.Show("Utilizador guardado");
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
-            {
-
-            }
+            textBox3.UseSystemPasswordChar = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Utilizador.Nome = "";
             if (Utilizador.Nome != "")
             {
                 label4.Text = Utilizador.Nome;
@@ -43,11 +41,29 @@ namespace Exercicio_16
         {
             Form2 frm2 = new Form2();
             frm2.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             fechafrms.fecharfrm();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                textBox3.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBox3.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
