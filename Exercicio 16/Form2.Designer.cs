@@ -38,6 +38,7 @@
             label4 = new Label();
             button3 = new Button();
             checkBox1 = new CheckBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // textBox3
@@ -46,6 +47,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(273, 27);
             textBox3.TabIndex = 11;
+            textBox3.UseSystemPasswordChar = true;
             textBox3.TextChanged += textBox3_TextChanged;
             // 
             // textBox2
@@ -103,7 +105,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(661, 28);
+            label4.Location = new Point(579, 22);
             label4.Name = "label4";
             label4.Size = new Size(98, 28);
             label4.TabIndex = 18;
@@ -112,9 +114,9 @@
             // 
             // button3
             // 
-            button3.Location = new Point(521, 350);
+            button3.Location = new Point(683, 12);
             button3.Name = "button3";
-            button3.Size = new Size(116, 67);
+            button3.Size = new Size(105, 55);
             button3.TabIndex = 19;
             button3.Text = "Fechar Programa";
             button3.UseVisualStyleBackColor = true;
@@ -131,11 +133,22 @@
             checkBox1.UseVisualStyleBackColor = true;
             checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
+            // button1
+            // 
+            button1.Location = new Point(521, 350);
+            button1.Name = "button1";
+            button1.Size = new Size(116, 67);
+            button1.TabIndex = 21;
+            button1.Text = "Guardar utilizador";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(checkBox1);
             Controls.Add(button3);
             Controls.Add(label4);
@@ -165,5 +178,6 @@
         private Label label4;
         private Button button3;
         private CheckBox checkBox1;
+        private Button button1;
     }
 }

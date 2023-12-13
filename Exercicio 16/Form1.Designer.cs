@@ -88,6 +88,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(273, 27);
             textBox3.TabIndex = 5;
+            textBox3.UseSystemPasswordChar = true;
             textBox3.TextChanged += textBox3_TextChanged;
             // 
             // button2
@@ -125,7 +126,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(657, 24);
+            label4.Location = new Point(579, 21);
             label4.Name = "label4";
             label4.Size = new Size(98, 28);
             label4.TabIndex = 17;
@@ -134,9 +135,9 @@
             // 
             // button3
             // 
-            button3.Location = new Point(395, 352);
+            button3.Location = new Point(683, 12);
             button3.Name = "button3";
-            button3.Size = new Size(116, 67);
+            button3.Size = new Size(105, 53);
             button3.TabIndex = 18;
             button3.Text = "Fechar Programa";
             button3.UseVisualStyleBackColor = true;

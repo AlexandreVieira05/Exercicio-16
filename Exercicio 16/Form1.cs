@@ -5,7 +5,6 @@ namespace Exercicio_16
         public Form1()
         {
             InitializeComponent();
-            Utilizador.Nome = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -22,12 +21,12 @@ namespace Exercicio_16
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            textBox3.UseSystemPasswordChar = true;
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (Utilizador.Nome != "")
+            if (Utilizador.Nome != null)
             {
                 label4.Text = Utilizador.Nome;
             }

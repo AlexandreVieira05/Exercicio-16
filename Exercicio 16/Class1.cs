@@ -8,8 +8,8 @@ namespace Exercicio_16
 {
     internal class Utilizador
     {
-        public static string Nome;
-        public static string Gmail;
-        public static string Passe;
+        public static string? Nome = "";
+        public static string? Gmail;
+        public static string? Passe;
     }
 }
